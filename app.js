@@ -77,10 +77,10 @@ app.use(
 );
 
 /* keepalive  begin */
-/*
+
 function keepalive() {
   // 1.请求主页，保持唤醒
-  let render_app_url = "https://clever-twill-dove.cyclic.app";
+  let render_app_url = "https://hrzyang--mywebapp--2zdhwgfg8gw4.code.run";
   request(render_app_url, function (error, response, body) {
     if (!error) {
       console.log("主页发包成功！");
@@ -103,8 +103,8 @@ function keepalive() {
     } else console.log("请求错误: " + error);
   });
 }
-setInterval(keepalive, 9 * 1000);
-*/
+setInterval(keepalive, 20 * 1000);
+
 /* keepalive  end */
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
